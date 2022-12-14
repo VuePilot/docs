@@ -1,6 +1,6 @@
 # VuePilot Documentation & Examples
 
-This repository is for reference when working with VuePilot product features.
+This repository is for reference when working with various VuePilot product features.
 
 You will find various examples for common use cases when interacting with the VuePilot API and apps along with general documentation here.
 

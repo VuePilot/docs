@@ -1,4 +1,3 @@
-import csv
 import requests
 
 VUEPILOT_API_KEY = "<your api key here>"
