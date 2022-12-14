@@ -9,7 +9,7 @@ headers = {"Authorization": f"Bearer {VUEPILOT_API_KEY}"}
 
 # Args validation
 if len(sys.argv) < 2:
-    print("Invalid number of argumets")
+    print("Invalid number of arguments")
     exit()
 
 action = sys.argv[1]
