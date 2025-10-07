@@ -61,41 +61,41 @@ curl "https://www.vuepilot.com/api/v1/services/leadstory/breaking?regions=0&limi
 
 ```json
 [
-	{
-		"id": 123456,
-		"slug": "major-tech-announcement",
-		"title": "Major Tech Company Announces Revolutionary Product",
-		"description": "Company XYZ revealed their latest innovation that could change the industry. The new product has made waves across the entire industry",
-		"created_at": "2025-01-15T14:30:00Z",
-		"publisher": {
-			"name": "Tech News Daily",
-			"icon_url": "https://assets.leadstory.com/publishers/123/images/icon.jpg"
-		},
-		"media": [
-			{
-				"assets": [
-					{
-						"file_type": "jpg",
-						"height": 1080,
-						"width": 1920,
-						"url": "https://cdn.jwplayer.com/v2/media/abc123/poster.jpg?width=1920"
-					},
-					{
-						"file_type": "jpg",
-						"height": 720,
-						"width": 1280,
-						"url": "https://cdn.jwplayer.com/v2/media/abc123/poster.jpg?width=1280"
-					}
-				]
-			}
-		],
-		"categories": [
-			{
-				"slug": "technology",
-				"title": "Technology"
-			}
-		]
-	}
+  {
+    "id": 123456,
+    "slug": "major-tech-announcement",
+    "title": "Major Tech Company Announces Revolutionary Product",
+    "description": "Company XYZ revealed their latest innovation that could change the industry. The new product has made waves across the entire industry",
+    "created_at": "2025-01-15T14:30:00Z",
+    "publisher": {
+      "name": "Tech News Daily",
+      "icon_url": "https://assets.leadstory.com/publishers/123/images/icon.jpg"
+    },
+    "media": [
+      {
+        "assets": [
+          {
+            "file_type": "jpg",
+            "height": 1080,
+            "width": 1920,
+            "url": "https://cdn.jwplayer.com/v2/media/abc123/poster.jpg?width=1920"
+          },
+          {
+            "file_type": "jpg",
+            "height": 720,
+            "width": 1280,
+            "url": "https://cdn.jwplayer.com/v2/media/abc123/poster.jpg?width=1280"
+          }
+        ]
+      }
+    ],
+    "categories": [
+      {
+        "slug": "technology",
+        "title": "Technology"
+      }
+    ]
+  }
 ]
 ```
 
@@ -297,13 +297,13 @@ curl "https://www.vuepilot.com/api/v1/services/leadstory/category?slug=technolog
 ```javascript
 // Get breaking news
 const response = await fetch(
-	"https://www.vuepilot.com/api/v1/services/leadstory/breaking?regions=0&limit=10&key=your_api_key"
+  "https://www.vuepilot.com/api/v1/services/leadstory/breaking?regions=0&limit=10&key=your_api_key"
 );
 const news = await response.json();
 
 // Get technology articles
 const techResponse = await fetch(
-	"https://www.vuepilot.com/api/v1/services/leadstory/category?slug=technology&regions=0&limit=5&key=your_api_key"
+  "https://www.vuepilot.com/api/v1/services/leadstory/category?slug=technology&regions=0&limit=5&key=your_api_key"
 );
 const techNews = await techResponse.json();
 ```
